@@ -1,2 +1,2 @@
 #!/bin/bash
-docker compose exec rails s rails s -b 0.0.0.0
+docker compose exec rails rails s -b 0.0.0.0

@@ -66,6 +66,6 @@ class EngineersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def engineer_params
-    params.fetch(:engineer, {})
+    params.fetch(:engineer, {}).permit(:name)
   end
 end
