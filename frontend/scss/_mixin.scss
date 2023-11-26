@@ -1,0 +1,21 @@
+$l-width: 1200px;
+$m-width: 800px;
+$s-width: 400px;
+
+@mixin pc {
+  @media screen and (min-width: calc($l-width)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $m-width) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: $s-width) {
+    @content;
+  }
+}
