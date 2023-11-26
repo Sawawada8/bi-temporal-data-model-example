@@ -2,6 +2,6 @@
 
 class ApplicationController < ActionController::Base
   def index
-    render json: { hel: 1234 }
+    render json: { hello: 'world' }
   end
 end
