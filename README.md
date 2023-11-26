@@ -1,6 +1,7 @@
 # BiTemporalDataModel で実装してみる
 
-### ActiveRecord::Bitemporal を使ってみる
+### [ActiveRecord::Bitemporal](https://github.com/kufu/activerecord-bitemporal) を使ってみる
+
 ```log
 id	name	bitemporal_id	valid_from	valid_to	transaction_from	transaction_to
 
