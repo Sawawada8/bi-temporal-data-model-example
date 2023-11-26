@@ -4,10 +4,12 @@
 
 <div id="engineers">
   <% @engineers.each do |engineer| %>
+    <hr>
     <%= render engineer %>
     <p>
       <%= link_to "Show this engineer", engineer %>
     </p>
+    <hr>
   <% end %>
 </div>
 
