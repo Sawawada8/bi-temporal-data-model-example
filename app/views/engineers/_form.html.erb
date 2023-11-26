@@ -1,0 +1,17 @@
+<%= form_with(model: engineer) do |form| %>
+  <% if engineer.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(engineer.errors.count, "error") %> prohibited this engineer from being saved:</h2>
+
+      <ul>
+        <% engineer.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
